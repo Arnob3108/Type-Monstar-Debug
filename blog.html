@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- tailwindcss added  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyui added  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="w-5/6 mx-auto mt-24">
+    <main>
+      <div class="text-center">
+        <h1 class="font-bold lg:w-1/5 text-2xl kbd kbd-lg">
+          Click To See The Answer
+        </h1>
+      </div>
+      <!-- Question & Answer section  -->
+      <section>
+        <div class="text-center">
+          <!-- The button to open modal -->
+          <!-- 1st Question with Answer  -->
+          <label
+            for="my-modal"
+            class="pb-14 lg:pb-0 my-10 btn modal-button text-lg lg:text-2xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            >Difference Between Local Storage & Session Storage</label
+          >
+
+          <input type="checkbox" id="my-modal" class="modal-toggle" />
+          <div class="modal">
+            <div class="modal-box">
+              <h3 class="font-bold text-xl">
+                Difference Between Local Storage & Session Storage
+              </h3>
+              <p class="py-4">
+                <span class="text-2xl">Local Storage</span> <br />
+                <ul class="list-disc ml-5">
+                    <li>Has no expiration date</li>
+                    <li>Client only</li>
+                    <li>Has no SSL support</li>
+                    <li>Data are not transferred on each HTTP request</li>
+                    <li>5 mb limit (check with the browser)</li>
+                  </ul>
+              </p>
+              <p class="py-4">
+                <span class="text-2xl">Session Storage</span> <br />
+                <ul class="list-disc ml-5">
+                    <li>Data is gone when you close the browser tab</li>
+                    <li>Client only</li>
+                    <li>Has no SSL support</li>
+                    <li>Data are not transferred on each HTTP request</li>
+                    <li>5-10 mb limit (check with the browser)</li>
+                  </ul>
+              </p>
+              <div class="modal-action">
+                <label for="my-modal" class="btn">Yay!</label>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
