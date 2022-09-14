@@ -25,7 +25,7 @@
       </div>
       <!-- Question & Answer section  -->
       <section>
-        <div class="text-center">
+        <div class="text-center flex flex-col">
           <!-- The button to open modal -->
           <!-- 1st Question with Answer  -->
           <label
@@ -114,7 +114,36 @@
               </div>
             </div>
           </div>
-          
+          <!-- 4th Question with Answer  -->
+          <label
+            for="my-modal4"
+            class="pb-28 lg:pb-0 my-10 btn modal-button text-lg lg:text-2xl transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            >How many ways we can get Undefined in JavaScript?</label
+          >
+
+          <input type="checkbox" id="my-modal4" class="modal-toggle" />
+          <div class="modal">
+            <div class="modal-box">
+              <h3 class="font-bold text-xl">
+                How many ways we can get Undefined in JavaScript?
+              </h3>
+              <p class="py-4">
+                <span class="text-2xl">The undefined property indicates that a variable has not been assigned a <ul class="list-disc ml-5">
+                    <li>Variable that is not initialized will give undefined</li>
+                    <li>Functions which does not return anything will give undefined</li>
+                    <li>Parameter that is not passed will be undefined</li>
+                    <li>If return has nothing on the right side will return undefined undefined</li>
+                    <li>Property that doesn't exist on an object will give you undefined</li>
+                    <li>Accessing array elements outside of the index range will give you undefined</li>
+                    <li>Deleting an element inside an array by using delete keyword will give you undefined</li>
+                    <li>Setting a value directly to undefined</li>
+                  </ul>
+              </p>
+              <div class="modal-action">
+                <label for="my-modal4" class="btn">Yay!</label>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
