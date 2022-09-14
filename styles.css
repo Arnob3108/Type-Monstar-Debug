@@ -142,16 +142,20 @@ button {
 }
 
 #histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: space-around; */
+  gap: 20px;
 }
 
 .card {
   width: 100%;
   height: 100%;
   padding: 50px;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -181,6 +185,8 @@ button {
   top: 0;
 }
 
+/* For smaller devices */
+
 @media only screen and (max-width: 700px) {
   .box-container {
     padding: 0 20px;
@@ -188,5 +194,12 @@ button {
   }
   .card {
     flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
   }
 }
